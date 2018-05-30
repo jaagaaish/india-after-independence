@@ -13,7 +13,49 @@
          body{
          margin: 10px;
          padding: 10px;
-         }
+         font-family: "Lato", sans-serif;
+}
+         .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #527a7a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a,h2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:  #a3c2c2;
+}
+h1{
+   color: grey;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
          #intro-title{
          text-align: center;
          }
@@ -39,17 +81,22 @@
          display:flex;
          align-items: center;
          }
-         #back-arrow{
-         display: flex;
-         justify-content: flex-end;
-         bottom: 0;
-         right: 0;
-         position: fixed;
-         font-size: 50px;
-      }
+          
       </style>
    </head>
    <body>
+       <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2>My India</h2>
+        <a href="file:///C:/Users/Dell/Desktop/challenge/homepage/homepage.html">Home</a>
+   <a href="file:///C:/Users/Dell/Desktop/challenge/social/social.html">Social</a>
+        <a href="file:///C:/Users/Dell/Desktop/challenge/political-economy/political-economy.html">political Economy</a>
+       <a href="file:///C:/Users/Dell/Desktop/challenge/contributors/contributors.html">Contributors</a>
+        <a href="file:///C:/Users/Dell/Desktop/challenge/landreforms/land-reforms.html">Landforms</a>
+      <a href="file:///C:/Users/Dell/Desktop/challenge/major-events/major-events.html">Major events</a>    
+      <a href="#">About Us</a> 
+</div>
+<span style="font-size:30px;color: #527a7a;cursor:pointer" onclick="openNav()">&#9776; open</span>
       <div class="container-fluid">
          <div class="row" id="intro-content">
             <div class="col-md-12 col-sm-12 col-lg-12" id="economic-intro">
@@ -139,10 +186,19 @@
             <figure>
                <img src="conclusion.jpg" >
             </figure>
-            <div id="back-arrow"><a href="file:///C:/Users/Dell/Desktop/challenge/homepage/homepage.html"><span>&#8594;</span></a></div>
+            
          </div>
       </div>
       </div>
       </div>
+      <script>
+         function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+      </script>
    </body>
 </html>
