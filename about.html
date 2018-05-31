@@ -1,34 +1,207 @@
 <!DOCTYPE html>
 <html>
-<head>
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<title>about us</title>
-	<style>
-		img {
-	width: 40%;
-	height: auto;
-	border-radius: 50%;
-	}
-	</style>
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row">
-		<div class="col-md-3 col-sm-3 col-lg-3">
-			<figure>
-				<img src="about.jpeg">
-			</figure>
-		</div>
-		<div class="col-md-3 col-sm-3 col-lg-3">
-			<p>A little About Us Aishwarya Shristhy,<br>Two champs currently a front-end developers <br>and on a roadway to become a full stack developers. </p>
-	</div>
-	<div class="column">
-		<figure>
-			<img src="shristhy.jpg">
-		</figure>
-	</div>
-</div>
-</div>
+   <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+      <title>about us</title>
+      <style>
+         body{
+         margin: 10px;
+         padding: 10px;
+         font-family: "Lato", sans-serif;
+         }
+         .sidenav {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         background-color: #527a7a;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+         }
+         .sidenav a,h2 {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: white;
+         display: block;
+         transition: 0.3s;
+         }
+         .sidenav a:hover {
+         color:  #a3c2c2;
+         }
+         h1{
+         color: grey;
+         }
+         .sidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+         }
+         @media screen and (max-height: 450px) {
+         .sidenav {padding-top: 15px;}
+         .sidenav a {font-size: 18px;}
+         }
+         img {
+         width: 80%;
+         border-radius: 50%;
+         }
+         p{
+         text-align: center;
+         font-size: 30px;
+         }
+         .col{
+         display: flex;
+         align-self: center;
+         justify-content: center;
+         }
+         figure{
+         display: flex;
+         height: 300px;
+         justify-content: center;
+         }
+         .card{
+         background: -webkit-linear-gradient(20deg, rgba(110,64,134,.4) 0%,rgba(100,150,200,.6) 50%);
+         width: 100%;
+         height: auto;
+         padding: 8px 10px 8px 10px;
+         border: 2px solid white;
+         }
+         #card-title{
+         text-align: center;
+         border-bottom: 2px inset white;
+         }
+         .footer{
+         background-color: #527a7a;
+         height: 40vh;
+         }
+         #icons{
+         font-size: 25px;
+         text-align: center;
+         color: white;
+         }
+         .fa {
+         display: inline-block;
+         font: normal normal normal 14px/1 FontAwesome;
+         font-size: inherit;
+         text-rendering: auto;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         padding: 4px;
+         }
+         #footer-content{
+         height: 40vh; 
+         }
+         .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
 
-</body>
+         }
+         .links2{
+            text-align: justify;
+            text-align: center;
+         }
+         a{
+            display: flex;
+            align-self: center;
+            justify-content: space-around;
+            flex: 1;  
+         color: white;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px 2px cyan;
+        
+             cursor: pointer;
+    text-decoration: none;
+             }
+         .footer-title{
+            color: white;
+            text-align: center;
+            margin: 10px;
+
+         }
+         .text{
+            color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <h2>My India</h2>
+         <a href="homepage.html">Home</a>
+         <a href="social.html">Social</a>
+         <a href="political-economy.html">political Economy</a>
+         <a href="contributors.html">Contributors</a>
+         <a href="land-reforms.html">Landforms</a>
+         <a href="major-events.html">Major events</a>    
+         <a href="#">About Us</a> 
+      </div>
+      <span style="font-size:30px;color: #527a7a;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4">
+               <figure>
+                  <img src="img\about.jpeg">
+               </figure>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+               <p>A little About Us Aishwarya Shrishty,<br>Two champs currently a front-end developers <br>and on a roadway to become a full stack developers. </p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+               <figure>
+                  <img src="img\shristhy.jpg">
+               </figure>
+            </div>
+         </div>
+      </div>
+      <div class="card">
+         <h1 id="card-title">ABOUT US</h1>
+         <p>Software developers always need to be upskilling, and increasingly are expected to bring more than just great code to an organisation.<br>Coding is horror! That's what we felt initially but when we found that we can built a better page using the code.<br>Now we are two enthusiastic youngers from different background of knowledge,who had little coding basics  are in urge of learning new things.Jaaga provided a great platform for us to enhance the Skills which is now made us a Front-End developers.Would provably be a Full Stack Developers.  </p>
+      </div>
+      <div class="footer">
+         <div id="footer" class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6" id="footer-content">
+               <h1 class="footer-title">Connect Us<hr></h1>
+               <div class="links">
+               <a id="icons" href="#"><i class="fab fa-facebook-square"></i></a>
+               <a id="icons" href="#"><i class="fab fa-instagram"></i></a>
+               <a id="icons" href="#"><i class="fab fa-linkedin-in"></i></a>
+               <a id="icons" href="#"><i class="fab fa-snapchat-ghost"></i></a>
+               <a id="icons" href="https://github.com/jaagaaish/india-after-independence"><i class="fab fa-github"></i></a>
+            </div>
+         </div>
+            <div id="footer" class="col-md-6 col-sm-6 col-lg-6" id="footer-content">
+               <h1 class="footer-title">Contact Us<hr></h1>
+               <div class="links2">
+               <i id="icons" class="fas fa-phone"></i>
+               <span id="icons"  class="text">9686495106/8210388894</span><br>
+               
+               <i id="icons" class="far fa-envelope"></i>
+               <span id="icons" class="text">r.aishwaryaise@gmail.com</span><br>
+               <i id="icons" class="fas fa-map-marker"></i>
+               <span id="icons" class="text">jaaga bangalore</span><br>
+            </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+         }
+      </script>
+   </body>
 </html>
