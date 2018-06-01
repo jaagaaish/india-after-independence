@@ -1,0 +1,81 @@
+/* styling for body */
+body{
+    margin: 10px;
+    padding: 10px;
+       font-family: "Lato", sans-serif;
+}
+/* styling for navigation bar */
+    .sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #527a7a;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a,h2 {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+transition: 0.3s;
+border-radius: 2px;
+padding: 20px;
+box-shadow: 1px 1px 1px 1px cyan;
+   
+        cursor: pointer;
+text-decoration: none;
+}
+
+.sidenav a:hover {
+color:  #a3c2c2;
+}
+h1{
+color: grey;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+
+    }
+    /* styling for contents */
+    #intro-title{
+    text-align: center;
+    }
+    #intro-content{
+    height: 100vh;
+    }
+    #index-fig{
+    display: flex;
+    justify-content : center;  
+    flex: 1; 
+    }
+    p,li{
+    text-align: justify;
+    line-height: 180%;
+    font-size: 20px;
+    }
+    img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    .row{
+    display:flex;
+    align-items: center;
+    }

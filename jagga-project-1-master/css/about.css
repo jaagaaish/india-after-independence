@@ -1,0 +1,129 @@
+/* style for body */
+body{
+    margin: 10px;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+    }
+    /* style for navigation bar */
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #527a7a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+    .sidenav a,h2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    }
+    .sidenav a:hover {
+    color:  #a3c2c2;
+    }
+    h1{
+    color: grey;
+    }
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    /* style for content */
+    img {
+    width: 80%;
+    border-radius: 50%;
+    }
+    p{
+    text-align: center;
+    font-size: 30px;
+    }
+    .col{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    }
+    figure{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    }
+    .card{
+    background: -webkit-linear-gradient(20deg, rgba(110,64,134,.4) 0%,rgba(100,150,200,.6) 50%);
+    width: 100%;
+    height: auto;
+    padding: 8px 10px 8px 10px;
+    border: 2px solid white;
+    }
+    #card-title{
+    text-align: center;
+    border-bottom: 2px inset white;
+    }
+    /* footer styling */
+    .footer{
+    background-color: #527a7a;
+    height: 40vh;
+    }
+    #icons{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    }
+    .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 4px;
+    }
+    #footer-content{
+    height: 40vh; 
+    }
+    .links{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+
+    }
+    .links2{
+       text-align: justify;
+       text-align: center;
+    }
+    a{
+       display: flex;
+       align-self: center;
+       justify-content: space-around;
+       flex: 1;  
+    color: white;
+border-radius: 2px;
+padding: 20px;
+box-shadow: 1px 1px 1px 1px cyan;
+   
+        cursor: pointer;
+text-decoration: none;
+        }
+    .footer-title{
+       color: white;
+       text-align: center;
+       margin: 10px;
+
+    }
+    .text{
+       color: white;
+    }

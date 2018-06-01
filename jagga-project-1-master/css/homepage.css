@@ -18,6 +18,12 @@ a,h2{
     font-size: 25px;
     color: white;
     display: block;
+    border-radius: 2px;
+padding: 20px;
+box-shadow: 1px 1px 1px 1px cyan;
+   
+        cursor: pointer;
+text-decoration: none;
 }
 #mySidenav{
     display: flex;

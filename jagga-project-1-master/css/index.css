@@ -1,0 +1,125 @@
+/* remove default margin padding */
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/yog.jpg');
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slide 30s infinite;
+    overflow: hidden;
+}
+/* style for main container */
+#main{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(10,1fr);
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    /* style for heading */
+    #text{
+        grid-column: 4/10;
+        grid-row: 1/2;
+        width: 600px;
+        height: 100px;
+        
+    }
+    h1{
+        margin: 10px;
+        font-size: 50px;
+        font-family: 'impact';
+        color: white;
+        
+    }
+    /* style for slide show animation */
+
+@keyframes slide {
+        20%{
+            background-image: url('../img/plant.jpg');
+            transition-timing-function: ease-in-out;
+            
+        }
+        
+         40%{
+            background-image: url('../img/lotus.jpg');
+            transition-timing-function: ease-in-out;
+
+        }
+
+        60%{
+            background-image: url('../img/mixed-race-people.jpg');
+            transition-timing-function: ease-in-out;
+        }
+
+        80%{
+            background-image: url('../img/taj-mahal.jpg');
+             transition-timing-function: ease-in-out;
+            }
+
+        100%{
+            background-image: url('../img/sanskrit.jpg');
+            transition-timing-function: ease-in-out;
+        }
+        
+    }
+    /* style for arrow */
+    #arrow-container{
+        width: 100px;
+        height: 100px;
+        grid-column: 6/7;
+        grid-row: 10/11;
+        margin-left: 20px;
+        
+    }
+    #arrow-style {
+        text-decoration: none;
+        font-size: 50px;
+    }
+    /* style for animating arrow */
+    #arrow {
+        margin: 20px;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 80px;
+        transform: rotate(90deg);
+        content: "\00BB";
+        color: beige;
+        animation: bouncerarrow 1s infinite;
+    }
+    @keyframes bouncerarrow {
+        0%{top: 0px;
+            opacity: 0;
+        }
+        50%{top: 20px; color:palegreen;
+            opacity: 2;
+        }
+        60%{
+            top: 0;
+            opacity: 1
+        }
+        100%{top: 0px;
+            opacity: 0;}
+
+    }
+    /* style for responsive-page */
+    @media (max-width: 760px) {
+        h1{
+            font-size: 35px;
+        }
+        
+    }
+    @media (max-width: 540px) {
+        h1{
+            font-size: 22px;
+        }
+        
+    }
+    

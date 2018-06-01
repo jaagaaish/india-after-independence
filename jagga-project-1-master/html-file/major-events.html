@@ -3,98 +3,30 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
+      <!-- links -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+      <link rel="stylesheet" href="../css/major-events.css">
       <title>major-events</title>
-      <style>
-         body{
-         margin: 10px;
-         padding: 10px;
-         font-family: "Lato", sans-serif;
-}
-         .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #527a7a;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a,h2 {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color:  #a3c2c2;
-}
-h1{
-   color: grey;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-         #intro-title{
-         text-align: center;
-         }
-         #intro-content{
-         height: 100vh;
-         }
-         #index-fig{
-         display: flex;
-         justify-content : center;  
-         flex: 1; 
-         }
-         p,li{
-         text-align: justify;
-         line-height: 180%;
-         font-size: 20px;
-         }
-         img{
-         display: flex;
-         justify-content: center;
-         width: 100%;
-         }
-         .row{
-         display:flex;
-         align-items: center;
-         }
-      </style>
+      
    </head>
    <body>
+       <!-- fixed navigation bar div -->
        <div id="mySidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <h2>My India</h2>
          <a href="homepage.html">Home</a>
-   <a href="social.html">Social</a>
-        <a href="political-economy.html">political Economy</a>
-       <a href="contributors.html">Contributors</a>
-        <a href="land-reforms.html">Landforms</a>
-      <a href="major-events.html">Major events</a>    
-      <a href="#">About Us</a> 
+         <a href="social.html">Social</a>
+         <a href="political-economy.html">political Economy</a>
+         <a href="contributors.html">Contributors</a>
+         <a href="land-reforms.html">Landforms</a>
+         <a href="major-events.html">Major events</a>    
+         <a href="about.html">About Us</a> 
 </div>
 <span style="font-size:30px;color: #527a7a;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<!-- content div -->
       <div class="container-fluid">
       <div class="row" id="intro-content">
          <div class="col-md-12 col-sm-12 col-lg-12" id="major-events-intro">
@@ -105,7 +37,7 @@ h1{
          </div>
          <div class="col-md-12 col-sm-12 col-lg-12" id="major-events-img">
             <figure id="index-fig">
-               <img id="index-img" src="img\index.jpg">
+               <img id="index-img" src="../img\parade.jpg">
             </figure>
          </div>
          <div class="col-md-12 col-sm-12 col-lg-12" id="major-events-content">
@@ -119,7 +51,7 @@ h1{
       <div class="row" id="tryst">
          <div  class="col-sm-6 col-md-7 col-lg-4" id="first-event-img">
             <figure>
-               <img src="img\nehru speech.jpg">
+               <img src="../img\nehru speech.jpg">
             </figure>
          </div>
          <div class="col-sm-6 col-md-5 col-lg-8" id="first-event-content">
@@ -137,7 +69,7 @@ h1{
          </div>
          <div  class="col-sm-6 col-md-7 col-lg-4" id="second-event-img">
             <figure>
-               <img src="img\republic india.jpg">
+               <img src="../img\republic india.jpg">
             </figure>
          </div>
       </div>
@@ -148,7 +80,7 @@ h1{
       <div class="row" id="tibetian">
          <div  class="col-sm-6 col-md-7 col-lg-4" id="third-event-img">
             <figure>
-               <img src="img\tibetians.jpg">
+               <img src="../img\tibetians.jpg">
             </figure>
          </div>
          <div class="col-sm-6 col-md-5 col-lg-8" id="third-event-content">
@@ -165,7 +97,7 @@ h1{
          </div>
          <div  class="col-sm-6 col-md-7 col-lg-4" id="fourth-event-img">
             <figure>
-               <img src="img\mother-teresa.jpg">
+               <img src="../img\mother-teresa.jpg">
             </figure>
          </div>
       </div>
@@ -176,7 +108,7 @@ h1{
       <div class="row" id="mumbai blast">
          <div  class="col-sm-6 col-md-7 col-lg-4" id="fifth-event-img">
             <figure>
-               <img src="img\mumbai blast.jpg">
+               <img src="../img\mumbai blast.jpg">
             </figure>
          </div>
          <div class="col-sm-6 col-md-5 col-lg-8" id="fifth-event-content">
@@ -193,7 +125,7 @@ h1{
          </div>
          <div  class="col-sm-6 col-md-7 col-lg-4" id="fifth-event-img">
             <figure>
-               <img src="img\Kashmir_region.jpg">
+               <img src="../img\Kashmir_region.jpg">
             </figure>
          </div>
       </div>
@@ -204,7 +136,7 @@ h1{
       <div class="row" id="crime shook">
          <div  class="col-sm-6 col-md-7 col-lg-4" id="fifth-event-img">
             <figure>
-               <img src="img\delhi crime.jpg">
+               <img src="../img\delhi crime.jpg">
             </figure>
          </div>
          <div class="col-sm-6 col-md-5 col-lg-8" id="fifth-event-content">
@@ -221,7 +153,7 @@ h1{
          </div>
          <div  class="col-sm-6 col-md-7 col-lg-4" id="sixth-event-img">
             <figure>
-               <img src="img\Abdul-kalam.jpg">
+               <img src="../img\Abdul-kalam.jpg">
             </figure>
          </div>
       </div>
@@ -232,21 +164,14 @@ h1{
       <div class="row" id="gst">
          <div  class="col-sm-6 col-md-7 col-lg-4" id="sixth-event-img">
             <figure>
-               <img src="img\gst.png">
+               <img src="../img\gst.png">
             </figure>
          </div>
          <div class="col-sm-6 col-md-5 col-lg-8" id="sixth-event-content">
             <p>Goods and Service Tax (GST) is an indirect tax (or consumption tax) levied in India on the sale of goods and services. GST is levied at every step in the production process, but is refunded to all parties in the chain of production other than the final consumer.Goods and services are divided into five tax slabs for collection of tax - 0%, 5%, 12%,18% and 28%. Petroleum products and alcoholic drinks are taxed separately by the individual state governments. There is a special rate of 0.25% on rough precious and semi-precious stones and 3% on gold. In addition a cess of 22% or other rates on top of 28% GST applies on few items like aerated drinks, luxury cars and tobacco products.</p>
          </div>
       </div>
-      <script>
-         function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-      </script>
-   </body>
+      <!-- linking javascript file -->
+      <script src="../js/nav.js"></script>
+    </body>
 </html>
